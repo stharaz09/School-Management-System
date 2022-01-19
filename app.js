@@ -5,6 +5,8 @@ dotenv.config()
 
 const app = express();
 
+app.set('view engine', 'ejs')
+
 
 
 const route = require(__dirname + '/server/routes/mainroute')

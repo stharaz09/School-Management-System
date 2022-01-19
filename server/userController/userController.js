@@ -5,10 +5,7 @@ const parent = require('../../parent');
 // console.log(parent[0].fname);
 
 exports.index = (req,res)=>{
-    con.query('SELECT * FROM parent',(err,result)=>{
-        {!err? console.log(result): console.log(err)}
-    })
-    res.send('Hello World!!');
+res.render('home')
 }
 
 exports.parentinfo = (req,res)=>{
