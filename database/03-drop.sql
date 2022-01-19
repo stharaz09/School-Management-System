@@ -1,1 +1,16 @@
+-- --------- DELETE TABLE FROM DATABASE --------
 DROP TABLE grade;
+
+
+-- --------- DELETE DATA FROM TABLE ------
+TRUNCATE TABLE parent;
+
+
+
+-- ----- IF WE HAVE FORIGNE KEY CONSTRAINTS
+-------- WE ARE NOT ABLE TO USE TRANCATE 
+-------- TO CLEAR DATA FROM TABLE USE BELOW CODE
+DELETE FROM parent WHERE id >= 1;
+
+-- ---- AUTO INCREMENT START FROM 1 ----
+ALTER TABLE parent auto_increment = 1;
