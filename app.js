@@ -1,4 +1,5 @@
 const express = require('express');
+const bodyParser = require('body-parser')
 const dotenv = require('dotenv');
 dotenv.config()
 
@@ -6,6 +7,8 @@ dotenv.config()
 const app = express();
 
 app.set('view engine', 'ejs')
+app.use(express.static('public'))
+app.use(bodyParser.urlencoded({extended:true}))
 
 
 
