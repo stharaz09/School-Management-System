@@ -1,9 +1,9 @@
 -- --------- DELETE TABLE FROM DATABASE --------
-DROP TABLE grade;
+-- DROP TABLE grade;
 
 
 -- --------- DELETE DATA FROM TABLE ------
-TRUNCATE TABLE parent;
+-- TRUNCATE TABLE parent;
 
 
 
