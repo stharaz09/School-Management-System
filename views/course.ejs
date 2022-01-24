@@ -1,0 +1,39 @@
+<%- include('./partials/header') -%>
+<h1>Course</h1>
+
+
+<form action="/course" method="post">
+<% if (grade == 'sci11') { %>
+<h2> Science</h2>
+    <label for="">Physic:</label>
+    <input type="checkbox" name="physic" id="" value="physic" checked>
+    <label for="">Chemistry:</label>
+    <input type="checkbox" name="chemistry" id=""  value="chemistry" checked>
+    <label for="">English:</label>
+    <input type="checkbox" name="" id="english"  value="english" checked>
+    <label for="">Mathematics:</label>
+    <input type="checkbox" name="math" id=""  value="math" checked>
+    <label for="">Biology:</label>
+    <input type="checkbox" name="biology"  value="biology" id="">
+    <label for="">Computer Science:</label>
+    <input type="checkbox" name="computer" value="cs"  id="">
+
+<% }else { %>
+<h2>Management</h2>
+    <label for="">English:</label>
+    <input type="checkbox" name="english" id="" value="English" checked>
+    <label for="">Nepali:</label>
+    <input type="checkbox" name="Nepali" id=""  value="Nepali" checked>
+    <label for="">Principle of Accounting:</label>
+    <input type="checkbox" name="poa" id="english"  value="poa" checked>
+    <label for="">Hotel Management:</label>
+    <input type="checkbox" name="hm" id=""  value="hm" checked>
+    <label for="">Travel and Tourism:</label>
+    <input type="checkbox" name="trav"  value="travel" id="">
+    <label for="">Economic:</label>
+    <input type="checkbox" name="eco" value="eco"  id="">
+
+<% } %>
+<button type="submit">Submit</button>
+</form>
+<%- include('./partials/javascript') -%>

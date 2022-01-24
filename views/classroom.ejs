@@ -1,0 +1,25 @@
+<%- include('./partials/header') -%>
+
+<h1>Classroom</h1>
+<form action="/classroom" method="post">
+    <div id="course" onchange="myClassroom()"> 
+        <input type="date" name="date" id="" placeholder="Enter year">
+        <input type="number" name="grade" id="" placeholder="Grade">
+        
+        <label for="section">Section</label>
+        <select name="section" id="section"> 
+            <option value="A">Section A</option>
+            <option value="B">Section B</option>
+            <option value="C">Section C</option>
+        </select>
+        <!-- <input type="text" name="" id="" placeholder="Section"> -->
+        <label for="">Status</label>
+        <label for="">On</label>
+        <input type="radio" name="" id="" placeholder="Status" value="1">
+        <label for="">Off</label>
+        <input type="radio" name="" id="" placeholder="Status" value="2">
+        <input type="text" name="" id="" placeholder="Remarks">
+        <input type="number" name="" id="" placeholder="Teacher">
+        <button type="submit">Submit</button>
+</form>
+    </div>

@@ -1,0 +1,51 @@
+<%- include('./partials/header') -%>
+<h1>Grade</h1>
+<form action="" method="post">
+    <select name="grade" id="grade" onchange="mycourse()">
+        <optgroup label="Eleven">
+        <option value="none">Select Faculty</option>
+        <option value="sci11">Science - XI</option>
+        <option value="mgm11">Management -XI</option>
+        </optgroup>
+        <optgroup label="Twelvel">
+        <option value="sci12">Science - XII</option>
+        <option value="mgm12">Management - XII</option>
+        </optgroup>
+    </select>
+
+
+    <h1>Course</h1>
+    <div id="course-sci">
+            <h2> Science</h2>
+            <label for="">Physic:</label>
+            <input type="checkbox" name="physic" id="" value="physic">
+            <label for="">Chemistry:</label>
+            <input type="checkbox" name="chemistry" id=""  value="chemistry">
+            <label for="">English:</label>
+            <input type="checkbox" name="" id="english"  value="english">
+            <label for="">Mathematics:</label>
+            <input type="checkbox" name="math" id=""  value="math">
+            <label for="">Biology:</label>
+            <input type="checkbox" name="biology"  value="biology" id="">
+            <label for="">Computer Science:</label>
+            <input type="checkbox" name="computer" value="cs"  id="">
+    </div>
+    <div id="course-mgm">
+        <h2>Management</h2>
+        <label for="">English:</label>
+        <input class="course-mgm" type="checkbox" name="english" id="" value="English">
+        <label for="">Nepali:</label>
+        <input class="course-mgm" type="checkbox" name="Nepali" id=""  value="Nepali">
+        <label for="">Principle of Accounting:</label>
+        <input class="course-mgm" type="checkbox" name="poa" id="english"  value="poa">
+        <label for="">Hotel Management:</label>
+        <input class="course-mgm" type="checkbox" name="hm" id=""  value="hm">
+        <label for="">Travel and Tourism:</label>
+        <input class="course-mgm" type="checkbox" name="trav"  value="travel" id="">
+        <label for="">Economic:</label>
+        <input class="course-mgm" type="checkbox" name="eco" value="eco"  id="">        
+    </div>
+<script src="js/javascript.js"></script>
+<button type="submit">Submit</button>
+</form>
+<!-- <%- include('./partials/javascript') -%> -->

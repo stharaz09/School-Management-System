@@ -1,0 +1,8 @@
+h1{
+    color: red;
+}
+
+div#course-sci, div#course-mgm, button#coursebtn{
+    display: none;
+}
+
