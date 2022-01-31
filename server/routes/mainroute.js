@@ -1,6 +1,8 @@
 const express = require('express');
  const router = express.Router()
 
+ const start = require('../userController/startPageController');
+
  const user = require('../userController/userController')
  router.get('/', user.login)
 router.post('/',user.checkLogin)
