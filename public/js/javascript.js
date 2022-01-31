@@ -17,4 +17,6 @@ if( x==='sci11'){
     document.getElementById('coursebtn').style.display ='none'
    }   
 }
-
+function search(){
+  document.getElementById('parentSearch').style.display ='block'
+}    

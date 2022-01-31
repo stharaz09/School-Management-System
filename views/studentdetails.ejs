@@ -3,9 +3,24 @@
     <h1>Student Form</h1>
     <form action="student" method="post">       
         <%- include('./partials/inputfield') -%>
-        <input type="text" name="" id="" >
-        <button>Next</button>
+        <br><br>
+        <select name="parent" id="">
+            <option value="">Select Parent</option>
+            <% parentdetails.forEach(parent=>{ %>                
+                <option value="<%= parent.id %>">
+                    <%= parent.fname %> <%= parent.mname %> <%= parent.lname %>
+                </option>
+               <% }) %>
+           
+        </select>
+       
+        <br> <br>
+
+
+       <button type="submit">Next</button>
     </form>
+
+<script src="js/javascript.js"></script>
 
 </body>
 </html>

@@ -6,3 +6,11 @@ div#course-sci, div#course-mgm, button#coursebtn{
     display: none;
 }
 
+/* div#parentSearch{
+
+    display: none;
+} */
+
+div#result{
+    display: none;
+}

@@ -32,4 +32,9 @@ const cls_stdCnt= require('../userController/cls_stdController')
 router.get('/cls_std',cls_stdCnt.cls_std)
 router.post('/cls_std',cls_stdCnt.cls_stdInfo)
 
+const search = require('../userController/search')
+router.get('/search', search.searchParent)
+router.post('/search', search.searchParentInfo)
+
+
 module.exports = router

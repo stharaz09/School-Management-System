@@ -14,18 +14,19 @@ exports.checkLogin = (req,res)=>{
        if(!err){
            const user = result[0].username
            const password = result[0].password
+           console.log('Login Test');
             if(user === LogInUser && password === LogInpassword){
                 res.redirect('/home');
                 console.log("LogIn Successfully!");
             }
             else{
-                res.redirect('/')
-               console.log("Failed to login");
+                res.redirect('/')                         
             }
        }else{
            console.log(err);
        }
     })
 }
+
 
 

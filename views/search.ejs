@@ -1,0 +1,13 @@
+<%- include('./partials/header') -%>
+<div id="parentSearch">
+    <label for="">Search Parent:</label> <br>
+    <form action="/search" method="post">
+        <input type="text" name="smobilenumber" placeholder="Enter number">
+        <input type="date" name="dob" id="" placeholder="Enter dob">
+        <button onclick="search()">Search</button>
+    </form>
+    <div id="result">Result : <%= result %></div>
+    <br>
+    <button>Add Parent</button>
+    <script src="js/javascript.js"></script>
+</div>
